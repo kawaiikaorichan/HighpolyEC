@@ -9,7 +9,14 @@ extern "C"
 	__declspec(dllexport) void __cdecl Init(const char* path, const HelperFunctions& helperFunctions)
 	{
 		HMODULE HDText = GetModuleHandle(L"AI_char_text");
+		HMODULE HDDXText = GetModuleHandle(L"AI_HDDX");
+		WriteData((NJS_OBJECT**)0x24960A8, &object_020960A8);
 		if (HDText)
+		{
+			ReplacePVM("mountain_carrier", "mountain_carrier_hphd");
+			ReplacePVM("ec_light", "mountain_carrier_hphd");
+		}
+		else if (HDDXText)
 		{
 			ReplacePVM("mountain_carrier", "mountain_carrier_hphd");
 			ReplacePVM("ec_light", "mountain_carrier_hphd");

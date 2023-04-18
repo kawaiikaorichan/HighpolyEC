@@ -15,16 +15,22 @@ extern "C"
 		{
 			ReplacePVM("mountain_carrier", "mountain_carrier_hphd");
 			ReplacePVM("ec_light", "mountain_carrier_hphd");
+			ReplacePVM("mountain_carrier_dc", "mountain_carrier_hphd");
+			ReplacePVM("ec_light_dc", "mountain_carrier_hphd");
 		}
 		else if (HDDXText)
 		{
 			ReplacePVM("mountain_carrier", "mountain_carrier_hphd");
 			ReplacePVM("ec_light", "mountain_carrier_hphd");
+			ReplacePVM("mountain_carrier_dc", "mountain_carrier_hphd");
+			ReplacePVM("ec_light_dc", "mountain_carrier_hphd");
 		}
 		else
 		{
 			ReplacePVM("mountain_carrier", "mountain_carrier_hp");
 			ReplacePVM("ec_light", "mountain_carrier_hp");
+			ReplacePVM("mountain_carrier_dc", "mountain_carrier_hp");
+			ReplacePVM("ec_light_dc", "mountain_carrier_hp");
 		}
 	}
 	__declspec(dllexport) ModInfo SADXModInfo = { ModLoaderVer };
